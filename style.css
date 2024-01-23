@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Poppins:ital@0;1&display=swap');
+
+
+*{
+
+
+    box-sizing: border-box;
+
+    
+}
+
+body{
+
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #36d1dc;
+    background: linear-gradient( to right,#5b86e5,#36d1dc);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 60px 70px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+#viewLogin{
+    display: block;
+    cursor: pointer;
+    position: relative;
+    top: 125px;
+    left: 220px;
+    width: 20px;
+    height: 20px;
+    z-index: 999;
+}
+
+#hideLogin{
+    display: none;
+    cursor: pointer;
+    position: relative;
+    top: 125px;
+    left: 220px;
+    width: 20px;
+    height: 20px;
+    z-index: 999;
+} 
+
+
+#viewRegisterPassword{
+    display: block;
+    cursor: pointer;
+    position: relative;
+    top: 120px;
+    left: 190px;
+    width: 20px;
+    height: 20px;
+    z-index: 999;
+}
+
+#hideRegisterPassword{
+    display: none;
+    cursor: pointer;
+    position: relative;
+    top: 120px;
+    left: 190px;
+    width: 20px;
+    height: 20px;
+    z-index: 999;
+} 
+
+
+#viewRegisterPasswordAgain{
+    display: block;
+    cursor: pointer;
+    position: relative;
+    top: 120px;
+    left: 190px;
+    width: 20px;
+    height: 20px;
+    z-index: 999;
+}
+
+#hideRegisterPasswordAgain{
+    display: none;
+    cursor: pointer;
+    position: relative;
+    top: 120px;
+    left: 190px;
+    width: 20px;
+    height: 20px;
+    z-index: 999;
+} 
+
+
+
+.containerRegister{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 80px 30px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    gap: 50px;
+
+
+   
+
+}
+
+.form-container.active .containerRegister{
+   display:  flex;
+}
+
+.form-container.active .container{
+    display:  none;
+ }
+
+
+.containerRegister label{
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    font-weight: bold;
+    color: black;
+    bottom: -30px;
+    left: 65px;
+}
+
+
+.register{
+    display: flex;
+    flex-direction: column;
+}
+.passwordinput{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerRegister button{
+    cursor: pointer;
+    position: relative;
+    border: none;
+    left: 50px;
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    font-weight: bold;
+    color: aliceblue;
+   
+   
+}
+
+.containerRegister button:hover{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    transition-duration: 10s;
+
+}
+
+.containerRegister input{
+    outline: none;
+    font-weight: normal;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 70px;
+    border: 1px solid;
+    border-radius: 2px;
+    width: 220px;
+    height: 35px;
+    left: -0px;
+
+}
+
+.containerRegister a{
+    position: relative;
+    left: 85px;
+    color: blue;
+    font-weight: bold;
+
+    text-decoration:  none;
+}
+.containerRegister a::before {
+   
+    position: relative;
+    top: 40px;
+    right: 2px;
+    content: ""; 
+    display: block; 
+    width: 40px;
+    height: 3px;
+    background-color: #000; 
+    margin-bottom: 10px;
+}
+
+
+
+.container img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 50px;
+    
+
+}
+
+#Reload{
+    position: relative;
+    right: -250px;
+}
+
+
+
+.container button{
+    cursor: pointer;
+}
+
+.container input{
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+} 
+
+.container a{
+    position: relative;
+    bottom: -40px;
+    left: 128px;
+    width: 100px;
+    display: inline-block;
+    text-decoration: none;
+    color:blue ;
+    font-weight: bold;
+
+}
+
+.container button{
+    position: relative;
+    left: 100px;
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    font-weight: bold;
+    color: aliceblue;
+    transition-duration: 2s;
+    border: none;
+}
+
+.container button:hover{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    transition-duration: 10s;
+}
+
+.container input{
+    position: relative;
+    border: 2px solid;
+    border-radius: 15px;
+    width: 220px;
+    height: 30px;
+    left: 40px;
+}
+
+.container input::placeholder{
+    position: relative;
+    left: 68px;
+}
+
+
+
+
+
+
+
+
+
